@@ -1,0 +1,929 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Montserrat", sans-serif;
+    scroll-behavior: smooth;
+}
+html, body {
+  height: 100%;
+}
+body, .header, .menu a {
+  transition: .7s ease all;
+}
+body{
+  overflow-x: hidden;
+}
+
+body.dark {
+    color: #fff;
+    background: #333;
+}
+body.dark .btn-toggle {
+    background: #f1f1f1;
+    color: #333;
+}
+body.dark .header {
+  background-color: #333
+}
+body.dark .menu a {
+  color: #fff;
+}
+/**MAIN**/
+.main-text-produit {
+  display: flex;
+  justify-content: center;
+  padding: 30px 0;
+  flex-direction: column;
+  align-items: center;
+}
+
+.main-text-formulaire {
+  display: flex;
+  justify-content: center;
+  padding: 30px 0;
+  flex-direction: column;
+  align-items: center;
+  
+}
+.banner3{
+  padding-top:  72px;
+}
+
+main {
+  min-height: calc(100% - 147px);
+}
+
+/**CONTAINERS**/
+
+.text-formulaire{
+  background-color: #115713;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+
+}
+.text-formulaire .main-text-formulaire{
+  flex-direction: column;
+  justify-content: center;
+  padding-bottom: 72px;
+}
+
+.text-container{
+  background-size: cover;
+  background-position: center right;
+  display: flex;
+  flex-direction:  row ;
+  background-color: #115713;
+
+}
+
+.text-container .main-text-produit {
+  flex-direction: column;
+    justify-content: center;
+    padding-bottom: 291px;
+    text-align: center;
+    padding: 113px;
+    margin-left: 59px;
+    margin-right: 23px;
+    line-height: 50px;
+    font-size: 22px;
+    font-weight: 500;
+}
+
+.telephone {
+  max-width: 749px;
+  margin: 79px 0;
+  padding-right: 188px;
+}
+
+.Titre3{
+  color:rgb(255, 255, 255);
+  font-size: 22px;
+  margin-bottom: 29px;
+}
+
+.Texte{
+  color:rgb(255, 255, 255);
+}
+
+/**FIN CONTAINER**/
+
+/** BANNER**/ 
+
+.banner {
+    min-height: calc(80vh - -450px);
+    background: url(../IMAGES/fond.png);
+    background-size: cover;
+    background-position: center right;
+    display: flex;
+    flex-direction:  row ;
+}
+.banner .column {
+  display: flex;
+}
+.column.icons, .iconsbanner, .iconsbanner3 {
+  flex-direction: column;
+  display: flex;
+  justify-content: flex-end;
+  padding-left: 1%;
+  position: fixed;
+  height: 80%;
+
+}
+
+.column.icons > a {
+  color: white;
+  text-decoration: none;
+  font-size: 3vh;
+}
+
+.banner .column.title {
+  flex-direction: column;
+  justify-content: center;
+  padding-bottom: 188px;
+}
+.banner .column.image {
+  flex-direction: column;
+  justify-content: center;
+  padding-bottom: 205px;
+  margin-left: 119px;
+}
+
+
+/** FIN BANNER **/ 
+
+/** HEADER **/ 
+
+.header {
+    position: fixed;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    background-color: white;
+    justify-content: space-between;
+}
+
+.logoContainer {
+    display: block;
+}
+
+.icones{
+    display: flex;
+    align-items: center;
+}
+
+.logo{
+    height: 66px;
+    margin-left: 90px;
+}
+
+.menu {
+    display: flex;
+    width:  100%;
+    margin: 0 25px;
+    list-style: none;
+}
+
+.menu  li {
+    margin: 30px auto;
+    overflow: hidden;
+}
+
+.menu  a {
+    font-size: 18px;
+    font-weight: 500;
+    color: green;
+    text-decoration: none;
+    position: relative;
+    display: block;
+    transition: transform 0.4s;
+}
+
+.menu  a::before {
+    content: attr(data-text);
+    position: absolute;
+    top: 100%;
+}
+
+.menu  a:hover {
+    transform: translateY(-100%);
+}
+
+.menu  li a:after {
+    content: '';
+    height: 2px;
+    width: 0px;
+    background-color: green;
+    position: absolute;
+    bottom: -22px;
+    right: 0;
+    transition: 0.3s width ease-in-out;
+}
+
+.menu  li a:hover:after, .menu  li a.active:after {
+    width: 100%;
+}
+
+ /**FIN HEADER**/
+
+ /** PHRASE D'ACCROCHE**/
+
+ .ELIA {
+    display: flex;
+    margin-bottom: 3%;
+    text-align: center;
+    width: 100%;
+    color: rgb(255, 255, 255);
+    font-size: 80px;
+    font-weight: 1600;
+    text-align: center;
+}
+.ELIA2 {
+    margin-left: 108px;
+    width: 100%;
+    
+}
+
+.Accroche {
+    line-height: 40px;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.TITRE2{
+    margin-left: 45px;
+    line-height: 55px;
+    width: calc(100% - 45px);
+    height: 25%;
+}
+
+.Titre {
+  width: 100%;
+  color: rgb(255, 255, 255);
+  font-size: 35px;
+  font-weight: 300;
+  text-align: center;
+  min-height: 100vh;
+}
+
+/**FIN PHRASE D'ACCROCHE**/
+
+/**FOOTER**/
+
+.footer {
+    min-height: 65px;
+    display: flex;
+    align-items: center;
+    margin-top: 5px;
+    justify-content: space-between;
+    padding: 0 100px;
+    flex-wrap: wrap;
+}
+
+.copyrights {
+
+    padding-right: 20px;
+    font-weight: 600;
+}
+
+.conditions {
+
+    text-decoration: none;
+    font-weight: 600;
+}
+/**FIN FOOTER**/
+
+/**DARKMODE**/
+
+.btn-toggle {
+    width: 40px;
+    height: 40px;
+    font-size: 11px;
+    border-radius: 50%;
+    background: #333;
+    color: #fff;
+    border: 1px solid #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    margin-right: 25px;
+}
+
+
+
+/**FIN DARKMODE**/
+
+
+/**FORMULAIRE**/
+
+.Titre4{
+  display: flex;
+  padding-bottom: 30px;
+  color: white;
+}
+
+#formulaire {
+  margin-left: 180px;
+  margin-right: 180px;
+  padding: 2rem;
+  background-color: #115713;
+  display: flex;
+  align-content: space-between;
+  justify-content: center;
+}
+
+.form {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, .5);
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+}
+
+.Formulaire {
+  display: none;
+}
+
+input {
+  height: 2.5em; 
+  vertical-align: middle; 
+  color: green;
+}
+
+input:focus {
+  background   : rgb(62, 66, 62);
+  border-radius: 30px;
+  outline      : none;
+}
+
+legend{
+  text-align: center;
+  overflow: hidden;
+  color: rgb(255, 255, 255);
+  font-size: 30px;
+  padding-bottom: 10px;
+    
+}
+
+.question{
+  padding: 10px;
+}
+
+.P,.red{
+  padding: 10px;
+}
+
+fieldset{
+  text-align: center;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  border: 2px solid #fff;
+  border-radius: 65px;
+  width: 400Px;
+}
+
+.envoyer {
+  display: flex;
+  justify-content: center;
+  padding: 5px;
+  font: bold .6em sans-serif;
+  background: none;
+  cursor: pointer;
+}
+
+
+.envoyer:hover,.envoyer:focus {
+  outline   : none;
+  color   : #FFF;
+}
+
+/**FIN FORMULAIRE**/
+
+/**INSCRIPTION**/
+
+.button{
+  display: block;
+  align-self: flex-start;
+  color: #FFF;
+  text-decoration: none;
+  border: 3px solid green;
+  border-radius: 997px;
+  padding: 0 20px;
+  font-size: 25px;
+  margin-left: 100px;
+}
+.button:hover {
+  color: green;
+}
+
+.fleche{
+  display: inline-block;
+  text-align: center;
+  width: 56px;
+  margin-left: 8px;
+  vertical-align: middle;
+}
+
+.robot {
+  max-width: 521px;
+  margin: 79px 0;
+  padding-right: 188px;
+}
+
+
+
+/**PAGE ABONNEMENT PRIME ET VIP**/
+
+.banner2{
+  padding-top: 300px;
+  background-color: #115713;
+  background-size: cover;
+  background-position: center right;
+  display: flex;
+  flex-direction:  row ;
+}
+
+.banner2 .abonnement{
+  display: flex;
+}
+
+.banner2 .abonnement.prime{
+  flex-direction: column;
+  justify-content: center;
+  margin-bottom: 80px;
+  width: 100%;  
+}
+
+.banner2 .abonnement.vip{
+  flex-direction: column;
+  justify-content: center;
+  margin-bottom: 80px;
+  width: 100%;
+  padding-right: 128px;
+
+}
+
+.banner2 .abonnement1.titre{
+  width: 100%;
+  color: rgb(255, 255, 255);
+  font-size: 70px;
+  padding-left: 134px;
+
+}
+
+.banner2 .abonnement1.texte{
+  line-height: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: white;
+  padding-left: 165px;
+  font-size: 25px;
+}
+
+.banner2 .abonnement2.titre{
+  width: 100%;
+  color: rgb(255, 255, 255);
+  font-size: 70px;
+  padding-left: 124px;
+}
+
+.banner2 .abonnement2.texte{
+  line-height: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color:white;
+  padding-left: 158px;
+  font-size: 25px;
+}
+
+.banner2 .mensuelle{
+  color: white;
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 35px;
+}
+
+.banner2 .annuelle{
+  color: white;
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 35px;
+}
+
+.button.achat1, .button.achat2{
+  display: block;
+  width: auto;
+  align-self: flex-start;
+  margin: 33px 0 0 230px;
+  color: white;
+  text-decoration: none;
+  border: 3px solid green;
+  border-radius: 25px;
+  padding: 0 20px;
+  font-size: 35px;
+  background-color: green;
+  transition: .3s;
+}
+.button.achat1:hover, .button.achat2:hover{
+  transform: scale(1.1);
+}
+
+.button.achat2{
+  margin: 31px 0 0 100px;
+}
+
+/**FIN PAGE ABONNEMENT**/
+
+
+/**PAGE NOTRE HISTOIRE**/
+
+.banner3{
+  min-height: calc(80vh - -450px);
+  background-color: #115713;
+  background-size: cover;
+  background-position: center right;
+  display: flex;
+  flex-direction:  row ;
+}
+
+.banner3 .histoire{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.banner3 .histoire .Qui{
+  margin-top: 60px;
+  color: white;
+  font-size: 60px;
+}
+
+.banner3 .histoire .histoire.texte{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 30px;
+  padding-left: -14px;
+  margin-top: 63px;
+  color: white;
+  text-align: center;
+  line-height: 60px;
+}
+
+/**FIN PAGE NOTRE HISTOIRE**/
+
+
+/** IMAGE **/
+
+
+figure {
+  padding: 5%;
+  max-width: 15%;
+  margin: auto;
+} 
+
+.fit-picture2 {
+  width: 90%;
+  filter: grayscale(10); 
+  box-shadow: 0px 0px 10px 3px black;
+  border-radius: 100%;
+  padding: 1%;
+}
+
+.fit-picture3 {
+  width: 90%;
+  filter: grayscale(10); 
+  box-shadow: 0px 0px 10px 3px black;
+  border-radius: 100%;
+  padding: 1%;
+}
+
+
+figcaption {
+  text-align: center;
+  margin-left: -20px;
+  color: white;
+  font: italic smaller sans-serif;
+  padding: 10px;
+  width: 100%;
+}
+.image_prof{
+display: flex;
+flex-wrap: wrap;
+}
+
+.icones > .burger  {
+  font-size: 2em;
+  display: none;
+  cursor: pointer;
+}
+
+.active {
+  left:0 !important;
+}
+
+@media (max-width: 1200px) {
+  .banner2{
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 992px) {
+   .banner2 .abonnement1.titre, .banner2 .abonnement2.titre{
+    font-size:  50px;
+    margin-left: 0;
+  }
+  .banner2 .abonnement1.texte, .banner2 .abonnement2.texte{
+    padding-left: 50px;
+  }
+  .button.achat1, .button.achat2{
+    margin: 25px auto;
+  }
+  main{
+  padding-top:  72px;
+  }
+  .ELIA{
+    font-size:  60px;
+  }
+  .banner{
+    flex-direction: column;
+    padding-top: 50px;
+  }
+  .banner .column.title{
+    padding-bottom: 0;
+  }
+  .ELIA2{
+    margin-left: 36px;
+  }
+  .Titre{
+    min-height: 20vh;
+    text-align: left;
+    font-size: 20px;
+  }
+  .column .button{
+    margin:  auto;
+    font-size: 20px;
+  }
+  .fleche{
+    width: 25px;
+  }
+  .banner{
+    min-height:  60vh;
+  }
+  .text-container{
+    flex-direction: column-reverse;
+  }
+  .avis-container{
+    flex-direction: column !important;
+  }
+  .main-img-produit{text-align: center;}
+  .telephone{
+    padding-right: 0;
+   max-width: 320px;
+  }
+  .text-container .main-text-produit{
+    padding:  0;
+  }
+
+  .icones > img{
+    display: none;
+  }
+
+  .icones > .burger {
+    display: block;
+    margin-right: 4vw;
+  }
+
+  .dark .menu{
+    background-color: #262626;
+  }
+
+  .menu{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    top: 0;
+    width: 40vw;
+    height: 100vh;    
+    margin: 0;
+    left: -40vw;
+    background-color: #efefef;
+    transition: .5s ease-in-out;
+  }
+
+}
+
+@keyframes pulseEffect{
+  to {
+    box-shadow: 0 0 0px 25px rgba(51, 51, 51, 0.5);
+  }
+}
+
+/**AVIS**/
+
+
+.avis-container{
+  background-color: #115713;
+  display: flex;
+  flex-direction: row;
+  color: white;
+  justify-content: center;
+}
+
+.Temoin {
+  display: flex;
+  justify-content: center;
+  color:rgb(255, 255, 255);
+  font-size: 28px;
+  background-color: #115713;
+}
+
+.text-avis{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding: 22px;
+  flex: 1 1 40px;
+}
+
+/**FIN AVIS**/
+
+/**COMMENTAIRE**/
+
+.formu{
+  padding: 2rem;
+  background-color: #115713;
+  text-align: center;
+}
+.formu h2{
+  color: white;
+  margin-bottom: 20px;
+}
+.formu form{
+  max-width: 600px;
+  margin: auto;
+}
+.formu input, .formu textarea{
+  width: 100%;
+  padding: 0 10px;
+  margin-bottom:15px;
+}
+.formu input[type="submit"]{
+      width: fit-content;
+}
+
+/**COMMENTAIRE**/
+
+
+/**CATEGORIE**/
+
+.Categorie{
+  color: white;
+  padding-top: 175px;
+  font-size: 18px;
+  padding-left: 5%;
+}
+.Categorie p{
+  cursor:  pointer;
+  max-width: 300px;
+  background-color: green;
+  border-radius: 5px;
+  margin:  10px 0;
+  padding:  5px;
+}
+
+.Article-1{
+  padding-bottom: 30px;
+}
+.TitreArticle-1 {
+  color: white;
+  font-size: 30px;
+  font-weight: 500;
+}
+
+.TexteArticle-1{
+  color: white;
+  font-size: 15px;
+  padding-top: 5px;
+  padding-bottom: 8px;
+}
+
+.TexteArticle-2{
+  color: white;
+  font-size: 15px;
+  padding-top: 5px;
+  padding-bottom: 8px;
+
+}
+
+.TitreArticle-2 {
+  color: white;
+  font-size: 30px;
+  font-weight: 500;
+}
+
+.all-Article{
+  padding: 172px 5%;
+}
+
+.main-Article{
+  width: 100%;
+  padding-left: 10%;
+  padding-top: 8%;
+}
+
+.ButtonArticle-1{
+  padding-top: 2%;
+}
+
+.ButtonArticle-2{
+  padding-top: 2%;
+}
+
+
+.Article-1-titre{
+  color: white;
+  font-size: 30px;
+  font-weight: 500;
+}
+
+.Article-2-titre{
+  color: white;
+  font-size: 30px;
+  font-weight: 500;
+}
+
+.bgvert{
+  background-color: #115713;
+  color:  white;
+  text-align: center;
+}
+
+.login{
+  font-size: 40px;
+  margin-right: 2vw;
+}
+.login a{
+  color:  black;
+}
+.dark .login a{
+  color: #fff
+}
+.ButtonArticle-1 button{
+  font-size:  15px !important;
+}
+#Inscription button, .all-Article button, .ButtonArticle-1 button{
+  border: 0;
+  padding: 15px 50px;
+  cursor: pointer;
+  font-size: 20px;
+  border-radius: 25px;
+  transition: .3s;
+}
+#Inscription button:hover, .all-Article button:hover, .ButtonArticle-1 button:hover{
+  padding: 15px 60px;
+}
+.parrainage{
+  padding-top:  100px;
+}
+.thx{
+  background-color: #115713;
+  color:  white;
+  min-height: calc(100vh - 150px);
+  width:  100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 150px;
+  flex-direction: column;
+}
+.container{
+  width:  100%;
+  max-width:  800px;
+  height: 100%;
+}
+.TitreArticle{
+  margin-bottom:  40px;
+}
+.thx h2{
+  margin-bottom: 30px;
+}
+.ql-snow{
+  background-color: #262626;
+}
